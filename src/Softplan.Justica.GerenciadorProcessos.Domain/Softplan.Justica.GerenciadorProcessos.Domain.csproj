@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="9.2.2" />
+    <PackageReference Include="MediatR" Version="8.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Softplan.Justica.GerenciadorProcessos.Domain.Dtos\Softplan.Justica.GerenciadorProcessos.Domain.Dtos.csproj" />
+    <ProjectReference Include="..\Softplan.Justica.GerenciadorProcessos.Domain.Models\Softplan.Justica.GerenciadorProcessos.Domain.Models.csproj" />
+    <ProjectReference Include="..\Softplan.Justica.GerenciadorProcessos.Infra.CrossCutting\Softplan.Justica.GerenciadorProcessos.Infra.CrossCutting.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+
+  gepro.db:
+    container_name: gepro_db
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: yahanderu
+      MYSQL_DATABASE: geprodb
+    ports:
+      - "4066:3306"
+
+  softplan.justica.gerenciadorprocessos:
+    container_name: gepro_api
+    restart: always
+    depends_on: 
+      - gepro.db
+    image: gepro-api
+    build:
+      context: .
+      dockerfile: src/Softplan.Justica.GerenciadorProcessos/Dockerfile
+    ports:
+      - "32005:80"

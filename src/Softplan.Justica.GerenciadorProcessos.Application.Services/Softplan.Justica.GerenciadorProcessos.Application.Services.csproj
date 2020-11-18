@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Softplan.Justica.GerenciadorProcessos.Domain.Dtos\Softplan.Justica.GerenciadorProcessos.Domain.Dtos.csproj" />
+    <ProjectReference Include="..\Softplan.Justica.GerenciadorProcessos.Domain\Softplan.Justica.GerenciadorProcessos.Domain.csproj" />
+    <ProjectReference Include="..\Softplan.Justica.GerenciadorProcessos.Infra.CrossCutting\Softplan.Justica.GerenciadorProcessos.Infra.CrossCutting.csproj" />
+  </ItemGroup>
+
+</Project>
